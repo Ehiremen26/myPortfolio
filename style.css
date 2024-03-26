@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.5;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.mobile-header {
+  display: none;
+}
+
+.header {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-nav {
+  background: #333;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+
+  margin: 0 auto;
+  padding: 12rem 3.2rem 0 3.2rem;
+}
+
+.nav-img {
+  width: 250px;
+}
+
+.main-nav-link {
+  padding: 0 6.5rem 0 6.5rem;
+}
+
+.main-nav-link-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #dee2e6;
+  font-size: 2rem;
+}
+
+.main-nav-link-list:link,
+.main-nav-link-list:visited {
+  display: inline-block;
+  color: #ced4da;
+}
+
+.main-nav-link-list:hover,
+.main-nav-link-list:active {
+  color: #f8f9fa;
+}
+
+/* MOBILE */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
+}
+
+/* .header-nav {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .header {
+  display: grid;
+  grid-template-columns: auto;
+} */
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+
+  box-shadow: 0 0 0 0.2rem rgb(94, 94, 97);
+}
+
+/* .main-nav {
+  margin: 0 auto;
+  padding: 16rem 9.8rem 0 9.8rem;
+} */
+
+/* .btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
+} */
+
+/* STICKY NAVIGATION */
+
+/* .sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+} */
+
+/* .nav-img {
+  max-width: 50%;
+}
+
+.main-nav-link {
+  padding-top: 3.2rem;
+} */
+
+.hero-section {
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 15rem 4.8rem;
+  margin-left: auto;
+  margin-left: auto;
+  line-height: 2;
+  border-bottom: 1px solid #333;
+}
+
+.heading {
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.heading-info {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heading-link:link,
+.heading-link:visited {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+}
+
+.heading-link:hover,
+.heading-link:active {
+  color: #8c8f92;
+}
+
+.heading-text {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+}
+
+.socials {
+  margin-top: 9.8rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+  font-size: 4.5rem;
+
+  /* flex-direction: column; */
+}
+
+.social-links:link,
+.social-links:visited {
+  display: inline;
+  color: #333;
+  cursor: pointer;
+}
+
+.social-links:hover,
+.social-links:active {
+  color: #ced4da;
+  transition: all 0.3s;
+}
+
+.Experience-section {
+  padding: 4.8rem 4.8rem;
+  border-bottom: 1px solid #333;
+}
+
+.Experience-heading {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.Experience {
+  margin-bottom: 9.6rem;
+}
+
+.sub-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.05;
+  padding-top: 1.05rem;
+  padding-bottom: 1.05rem;
+}
+
+.body-text {
+  font-size: 2rem;
+  line-height: -1.05;
+}
+
+.sub-body-heading {
+  font-weight: 700;
+  padding-bottom: 1.05rem;
+}
+
+.sub-body-text {
+  font-size: 2.5rem;
+}
+
+.skills {
+  padding: 4.8rem 4.8rem;
+  border-bottom: 1px solid #333;
+}
+
+.skills-heading {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.skills-body p {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  color: #8c8f92;
+}
+
+.skills-icon {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+  margin-bottom: 12rem;
+  font-size: 7.2rem;
+}
+
+.footer {
+  padding: 3rem 3.2rem 3rem 3.2rem;
+}
+
+.footer-text {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #8c8f92;
+}
